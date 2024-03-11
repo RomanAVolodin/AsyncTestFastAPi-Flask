@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "flaskproject"
+version = "0.1.0"
+description = ""
+authors = ["Roman Volodin <rozarioagro@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flask = {extras = ["async"], version = "^3.0.2"}
+gevent = "^24.2.1"
+gunicorn = "^21.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
